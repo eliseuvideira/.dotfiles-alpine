@@ -1,0 +1,19 @@
+#!/bin/sh
+alias ls="ls --color=auto"
+alias l.="ls -d .* --color=auto"
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias fgrep='fgrep --colour=auto'
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -Iv --preserve-root"
+alias ln="ln -iv"
+alias chgrp="chgrp --preserve-root"
+alias chmod="chmod --preserve-root"
+alias chown="chown --preserve-root"
+alias vi="nvim"
+alias vim="nvim"
+alias sl="ls"
+alias c="clear"
+alias d="docker"
+alias dc="docker-compose"
