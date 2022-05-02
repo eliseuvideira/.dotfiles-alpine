@@ -6,7 +6,7 @@ alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
 alias cp="cp -iv"
 alias mv="mv -iv"
-alias rm="rm -Iv --preserve-root"
+alias rm="rm -iv --preserve-root"
 alias ln="ln -iv"
 alias chgrp="chgrp --preserve-root"
 alias chmod="chmod --preserve-root"
