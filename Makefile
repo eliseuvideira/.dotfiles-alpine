@@ -1,9 +1,9 @@
-.PHONY:
+.PHONY: install
 install: vim zsh
 
-.PHONY:
+.PHONY: vim
 vim:
 	stow --no-folding -t ~ vim
-.PHONY:
+.PHONY: zsh
 zsh:
 	stow --no-folding -t ~ zsh
