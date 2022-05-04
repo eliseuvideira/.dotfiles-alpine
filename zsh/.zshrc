@@ -1,11 +1,11 @@
 #!/bin/zsh
 
-if [ -r "$HOME/.zprofile" ]; then
-  source "$HOME/.zprofile"
+if [ -r "${HOME}/.zprofile" ]; then
+  source "${HOME}/.zprofile"
 fi
 
-if [ -r "$HOME/.zaliases" ]; then
-  source "$HOME/.zaliases"
+if [ -r "${HOME}/.zaliases" ]; then
+  source "${HOME}/.zaliases"
 fi
 
 ZSH="/usr/share/oh-my-zsh/"
@@ -18,7 +18,7 @@ DISABLE_AUTO_UPDATE="true"
 
 DISABLE_MAGIC_FUNCTIONS="true"
 
-ZSH_CUSTOM="$HOME/.config/zsh/oh-my-zsh/custom"
+ZSH_CUSTOM="${HOME}/.config/zsh/oh-my-zsh/custom"
 
 if [ ! -d "${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting" ]; then
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting"
@@ -30,10 +30,10 @@ fi
 
 plugins=(zsh-syntax-highlighting zsh-autosuggestions)
 
-ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
+ZSH_CACHE_DIR="${HOME}/.cache/oh-my-zsh"
 
-if [[ ! -d $ZSH_CACHE_DIR ]]; then
-  mkdir "$ZSH_CACHE_DIR"
+if [[ ! -d "${ZSH_CACHE_DIR}" ]]; then
+  mkdir -p "${ZSH_CACHE_DIR}"
 fi
 
-source "$ZSH/oh-my-zsh.sh"
+source "${ZSH}/oh-my-zsh.sh"
